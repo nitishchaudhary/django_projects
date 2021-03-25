@@ -1,0 +1,27 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <div class = 'login-container'>
+           <h1>LOGIN</h1>
+            <div class = 'login-form'>
+                <form action = 'login' method = 'post'>
+                    {% csrf_token %}
+                    <input type = 'text' name = 'username' placeholder = 'username'><br><br>
+                    <input type = 'password' name = 'password' placeholder = 'password'><br><br>
+                    <input type = 'submit' name = 'submit'><br>
+                    
+                </form>
+            </div>
+            <div class = 'not-register'>
+                <h3>Not Registered ? <br>
+                <a href = 'register'> Click Here To Register</h3></a>
+            </div>
+        </div>
+        </center>
+</body>
+</html>

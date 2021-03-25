@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{%block content%}
+
+    <h1>Another Website Developement in progress</h1>
+    <h2>HELLO {{name}}</h2>
+    <b>This is basic addition of two numbers</b><br>
+    <form action = '/' method = 'post'>
+        {% csrf_token %}
+        Enter the first number : <input type = 'text' name = 'num1'><br>
+        Enter the second number : <input type = 'text' name = 'num2'><br>
+        <input type = 'submit'>
+        
+        </form>
+
+{% endblock%}
